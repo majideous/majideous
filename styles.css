@@ -1,0 +1,209 @@
+:root {
+  /* color */
+  --parchment: #f5f4ed;
+  --ivory: #faf9f5;
+  --warm-sand: #e8e6dc;
+  --deep-dark: #141413;
+  --dark-surface: #30302e;
+
+  --brand: #064e3b;
+  --brand-light: #059669;
+
+  --dark-warm: #3d3d3a;
+  --olive: #504e49;
+  --stone: #6b6a64;
+
+  --border: #e8e6dc;
+  --border-soft: #e5e3d8;
+
+  /* spacing scale */
+  --space-xs: 0.125rem;
+  --space-sm: 0.25rem;
+  --space-md: 0.5rem;
+  --space-lg: 1rem;
+  --space-xl: 1.5rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 5rem;
+
+  /* font scale 1.200 minor third scale*/
+  --fs-sm: 0.833rem;
+  --fs-base: 1rem;
+  --fs-md: 1.2rem;
+  --fs-lg: 1.44rem;
+  --fs-xl: 1.728rem;
+  --fs-2xl: 2.074rem;
+  --fs-3xl: 2.488rem;
+  --fs-4xl: 2.986rem;
+
+  /* font */
+  --serif: "Lora", Charter, Palatino, Georgia, serif;
+  --sans: "Plus Jakarta Sans", "Poppins", Arial, sans-serif;
+  --mono: "JetBrains Mono", "Fira Code", "SF Mono", Consolas, Monaco, monospace;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-size: 100%;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+
+  font-family: var(--sans);
+  font-size: var(--fs-base);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--deep-dark);
+  background: var(--parchment);
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+
+  font-family: var(--serif);
+  font-weight: 500;
+}
+
+/* Set font size on headers */
+h1 {
+  font-size: var(--fs-4xl);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--fs-3xl);
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: var(--fs-2xl);
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: var(--fs-xl);
+  line-height: 1.35;
+}
+
+h5 {
+  font-size: var(--fs-lg);
+  line-height: 1.4;
+}
+
+h6 {
+  font-size: var(--fs-md);
+  line-height: 1.45;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* A element that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Inherit fonts for input and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Media won't break the layout */
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Respect the user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
+  }
+}
+
+/* Readability sweet spot */
+main p,
+main li {
+  max-width: 65ch;
+}
+
+/* Gap between siblings */
+p + p {
+  margin-block-start: var(--space-lg);
+}
+
+/* Gap inside a container */
+.card {
+  padding: var(--space-xl) var(--space-2xl);
+}
+
+/* Gap between flex/grid children */
+.row {
+  display: flex;
+  gap: var(--space-lg);
+}
