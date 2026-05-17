@@ -207,3 +207,13 @@ p + p {
   display: flex;
   gap: var(--space-lg);
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --parchment: #141413;
+    --ivory: #30302e;
+    --warm-sand: #6b6a64;
+    --deep-dark: #f5f4ed;
+  }
+}
