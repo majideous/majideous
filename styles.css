@@ -217,3 +217,7 @@ p + p {
     --deep-dark: #f5f4ed;
   }
 }
+
+.skip-link:focus {
+  left: 0;
+}

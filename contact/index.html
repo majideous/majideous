@@ -8,16 +8,13 @@
     <!-- SEO -->
     <meta name="description" content="Send me a message" />
     <meta name="author" content="Majideous" />
-    <link rel="canonical" href="https://majideous.vercel.app/contact.html" />
+    <link rel="canonical" href="https://majideous.vercel.app/contact" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Contact - Majideous" />
     <meta property="og:description" content="Send me a message" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://majideous.vercel.app/contact.html"
-    />
+    <meta property="og:url" content="https://majideous.vercel.app/contact" />
     <meta property="og:image" content="https://majideous.vercel.app/og.png" />
 
     <!-- Twitter Card -->
@@ -29,26 +26,32 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header>
-      <h1>
-        <a href="/"><strong>Majideous</strong></a>
-      </h1>
-      <p>Self taught fullstack web developer based in Indonesia.</p>
+      <a href="/" rel="home">Majideous</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/colophon">Colophon</a></li>
+          <li><a href="/contact" aria-current="page">Contact</a></li>
+          <li><a href="/now">Now</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/uses">Uses</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/colophon.html">Colophon</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/now.html">Now</a></li>
-        <li><a href="/projects.html">Projects</a></li>
-        <li><a href="/uses.html">Uses</a></li>
-      </ul>
-    </nav>
     <main id="main">
-      <form action="/contact-thanks.html" method="post" novalidate>
+      <h1>Contact</h1>
+      <p>
+        Send me a message via the form below, or
+        <a href="mailto:majideous-business@gmail.com"
+          >majideous-business@gmail.com</a
+        >
+        if you prefer email. This form doesn't submit anywhere yet. Until then,
+        please use email.
+      </p>
+      <form action="/contact" method="post" novalidate>
         <fieldset>
-          <legend>Send me a message</legend>
+          <legend>Get in touch</legend>
           <p>
             <label for="name">Your name</label>
             <input
@@ -58,6 +61,7 @@
               required
               minlength="2"
               maxlength="60"
+              autocomplete="name"
               aria-describedby="name-hint"
             />
             <small id="name-hint">Two characters or more.</small>
@@ -70,6 +74,7 @@
               name="email"
               type="email"
               required
+              maxlength="120"
               autocomplete="email"
               aria-describedby="email-hint"
             />
@@ -85,23 +90,30 @@
               minlength="10"
               maxlength="2000"
               rows="6"
-              aria-describedby="msg-hint"
+              aria-describedby="message-hint"
             ></textarea>
-            <small id="msg-hint">10 - 2000 characters.</small>
+            <small id="message-hint">10 - 2000 characters.</small>
           </p>
 
-          <button type="submit">Send message</button>
+          <button type="submit">Send</button>
         </fieldset>
       </form>
+      <aside aria-labelledby="contact-other-ways">
+        <h2 id="contact-other-ways">Other ways to reach me</h2>
+        <ul>
+          <li>
+            GitHub:
+            <a href="https://github.com/majideous/" rel="external"
+              >@majideous</a
+            >
+          </li>
+        </ul>
+      </aside>
     </main>
     <footer>
-      <p>Last update May 2026</p>
       <p>
-        <a href="mailto:majideous-business@gmail.com"
-          >majideous-business@gmail.com</a
-        >
+        <small>© 2026 Majid · <a href="/colophon">How it's built</a></small>
       </p>
-      <p>© 2026 Majid · <a href="/colophon.html">How it's built</a></p>
     </footer>
   </body>
 </html>

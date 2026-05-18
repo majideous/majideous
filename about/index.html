@@ -6,18 +6,15 @@
     <title>About - Majideous</title>
     <link rel="stylesheet" href="./styles.css" />
     <!-- SEO -->
-    <meta name="description" content="The background and the core values" />
+    <meta name="description" content="My background and core values" />
     <meta name="author" content="Majideous" />
-    <link rel="canonical" href="https://majideous.vercel.app/about.html" />
+    <link rel="canonical" href="https://majideous.vercel.app/about" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="About - Majideous" />
-    <meta
-      property="og:description"
-      content="The background and the core values"
-    />
+    <meta property="og:description" content="My background and core values" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://majideous.vercel.app/about.html" />
+    <meta property="og:url" content="https://majideous.vercel.app/about" />
     <meta property="og:image" content="https://majideous.vercel.app/og.png" />
 
     <!-- Twitter Card -->
@@ -29,25 +26,23 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header>
-      <h1>
-        <a href="/"><strong>Majideous</strong></a>
-      </h1>
-      <p>Self taught fullstack web developer based in Indonesia.</p>
+      <a href="/" rel="home">Majideous</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/about" aria-current="page">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/colophon">Colophon</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/now">Now</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/uses">Uses</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/colophon.html">Colophon</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/now.html">Now</a></li>
-        <li><a href="/projects.html">Projects</a></li>
-        <li><a href="/uses.html">Uses</a></li>
-      </ul>
-    </nav>
     <main id="main">
-      <section>
-        <h2>About Me</h2>
+      <h1>About Me</h1>
+      <section aria-labelledby="about-my-background">
+        <h2 id="about-my-background">My Background</h2>
         <p>
           Hi! I'm Majid, also known on internet as Majideous. I'm an Indonesian
           currently living in my home country, Indonesia.
@@ -85,14 +80,12 @@
           taking care a diverse collection of fish in my aquarium.
         </p>
         <p>
-          <strong
-            >I'm following my own interests, going deeper down the rabbit hole,
-            and surfacing something for me and others.</strong
-          >
+          I'm following my own interests, going deeper down the rabbit hole, and
+          surfacing something for me and others.
         </p>
       </section>
-      <section>
-        <h2>Core Principles</h2>
+      <section aria-labelledby="about-core-principles">
+        <h2 id="about-core-principles">Core Principles</h2>
         <ul>
           <li>
             Being a lifelong learner - Always continuously learning and
@@ -118,15 +111,20 @@
           </li>
         </ul>
       </section>
+      <section aria-labelledby="about-contact">
+        <h2 id="about-contact">Getting in touch</h2>
+        <address>
+          Email:
+          <a href="mailto:majideous-business@gmail.com"
+            >majideous-business@gmail.com</a
+          >
+        </address>
+      </section>
     </main>
     <footer>
-      <p>Last update May 2026</p>
       <p>
-        <a href="mailto:majideous-business@gmail.com"
-          >majideous-business@gmail.com</a
-        >
+        <small>© 2026 Majid · <a href="/colophon">How it's built</a></small>
       </p>
-      <p>© 2026 Majid · <a href="/colophon.html">How it's built</a></p>
     </footer>
   </body>
 </html>

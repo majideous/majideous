@@ -6,15 +6,21 @@
     <title>Uses - Majideous</title>
     <link rel="stylesheet" href="./styles.css" />
     <!-- SEO -->
-    <meta name="description" content="Things behind every commit" />
+    <meta
+      name="description"
+      content="The hardware and software I actually use day-to-day"
+    />
     <meta name="author" content="Majideous" />
-    <link rel="canonical" href="https://majideous.vercel.app/uses.html" />
+    <link rel="canonical" href="https://majideous.vercel.app/uses" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Uses - Majideous" />
-    <meta property="og:description" content="Things behind every commit" />
+    <meta
+      property="og:description"
+      content="The hardware and software I actually use day-to-day"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://majideous.vercel.app/uses.html" />
+    <meta property="og:url" content="https://majideous.vercel.app/uses" />
     <meta property="og:image" content="https://majideous.vercel.app/og.png" />
 
     <!-- Twitter Card -->
@@ -26,25 +32,27 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header>
-      <h1>
-        <a href="/"><strong>Majideous</strong></a>
-      </h1>
-      <p>Self taught fullstack web developer based in Indonesia.</p>
+      <a href="/" rel="home">Majideous</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/colophon">Colophon</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/now">Now</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/uses" aria-current="page">Uses</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/colophon.html">Colophon</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/now.html">Now</a></li>
-        <li><a href="/projects.html">Projects</a></li>
-        <li><a href="/uses.html">Uses</a></li>
-      </ul>
-    </nav>
     <main id="main">
-      <section>
-        <h2>Hardwares</h2>
+      <h1>Uses</h1>
+      <p>
+        The hardware and software I actually use. Updated
+        <time datetime="2026-05-18">18 May 2026</time>.
+      </p>
+      <section aria-labelledby="uses-hardware">
+        <h2 id="uses-hardware">Hardware</h2>
         <h3>Desk Setup</h3>
         <table>
           <thead>
@@ -137,8 +145,8 @@
         </table>
       </section>
 
-      <section>
-        <h2>Softwares</h2>
+      <section aria-labelledby="uses-software">
+        <h2 id="uses-software">Software</h2>
         <table>
           <thead>
             <tr>
@@ -262,15 +270,21 @@
           </tbody>
         </table>
       </section>
+      <aside aria-labelledby="uses-disclaimer">
+        <h2 id="uses-disclaimer">Disclaimer</h2>
+        <p>
+          <small
+            >No affiliate links. No paid placements. This is just what I
+            use.</small
+          >
+        </p>
+      </aside>
     </main>
     <footer>
       <p>Last update May 2026</p>
       <p>
-        <a href="mailto:majideous-business@gmail.com"
-          >majideous-business@gmail.com</a
-        >
+        <small>© 2026 Majid · <a href="/colophon">How it's built</a></small>
       </p>
-      <p>© 2026 Majid · <a href="/colophon.html">How it's built</a></p>
     </footer>
   </body>
 </html>
